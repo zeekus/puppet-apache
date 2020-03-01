@@ -4,16 +4,6 @@
 #
 # @example
 #   include apache
-
-#params.pp style
-#class apache {
-#  include apache::install
-#}
-
-#hiera style init.pp
-class apache  (
-  String $install_name,
-  String $install_ensure,
-) {
+class apache {
   include apache::install
 }
